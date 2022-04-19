@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TESTTESTTESTTESTTESTTESTTESTTESTTESTTEST</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="wrap">
+		
+		<div class="calculator">
+			<div class="screen">
+				<div class="casio">
+					CASIO
+				</div>
+				<div class="inner-screen" id="inscreen"></div>
+				<div id="operator"></div>
+			</div>
+			<div class="inside" >
+				
+				<div class="one" onclick="onNumberClick(1)">1
+					
+					<svg id="one"> 
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="two" onclick="onNumberClick(2)">2
+					
+					<svg id="two">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="three" onclick="onNumberClick(3)">3
+					
+					<svg id="three">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="divide" onclick="onOperatorClick('/')">/
+					
+					<svg id="divide">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+					
+				</div>
+
+				<div class="four" onclick="onNumberClick(4)">4
+					
+					<svg id="four">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="five" onclick="onNumberClick(5)">5
+					
+					<svg id="five">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="six" onclick="onNumberClick(6)">6
+					
+					<svg id="six">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="minus" onclick="onOperatorClick('-')">-
+					
+					<svg id="minus">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="seven" onclick="onNumberClick(7)">7
+					
+					<svg id="seven">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="eight" onclick="onNumberClick(8)">8
+					
+					<svg id="eight">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="nine" onclick="onNumberClick(9)">9
+					
+					<svg id="nine">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="plus" onclick="onOperatorClick('+')">+
+					
+					<svg id="plus">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="clear" onclick="onClearClick()">C
+					
+					<svg id="clear">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="zero" onclick="onNumberClick(0)">0
+					
+					<svg id="zero">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="equal" onclick="equals()">=
+					
+					<svg id="equal">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+				<div class="multiply" onclick="onOperatorClick('*')">*
+					
+					<svg id="multiply">
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="bg-line" />
+						<polyline points="99,1 99,99 1,99 1,1 99,1" class="hl-line" />
+					</svg>
+				</div>
+
+
+				
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>
